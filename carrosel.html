@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <title>Infinite Logo Carousel</title>
+  </head>
+  <body>
+
+	<div class="row">
+		<div class="container">
+		  <section class="customer-logos slider" data-arrows="true">
+			<div class="slide"><img src="uploads/logo_01.png"></div>
+			<div class="slide"><img src="uploads/logo_02.png"></div>
+			<div class="slide"><img src="uploads/logo_03.png"></div>
+			<div class="slide"><img src="uploads/logo_05.png"></div>
+			<div class="slide"><img src="uploads/logo_06.png"></div>
+			<div class="slide"><img src="uploads/logo_07.png"></div>
+			<div class="slide"><img src="uploads/logo_08.png"></div>
+			<div class="slide"><img src="uploads/logo_09.png"></div>
+            <div class="slide"><img src="uploads/logo_10.png"></div>
+			<div class="slide"><img src="uploads/logo_11.png"></div>
+			<div class="slide"><img src="uploads/logo_12.png"></div>
+            <div class="slide"><img src="uploads/logo_13.png"></div>
+			<div class="slide"><img src="uploads/logo_14.png"></div>
+			<div class="slide"><img src="uploads/logo_15.png"></div>
+            <div class="slide"><img src="uploads/logo_16.png"></div>
+			<div class="slide"><img src="uploads/logo_17.png"></div>
+			<div class="slide"><img src="uploads/logo_18.png"></div>
+            <div class="slide"><img src="uploads/logo_19.png"></div>
+			<div class="slide"><img src="uploads/logo_20.png"></div>
+			<div class="slide"><img src="uploads/logo_21.png"></div>
+		  </section>
+		</div>
+	  </div>
+	  
+	 <script type="text/javascript">
+		$(document).ready(function() {
+ 		  $('.customer-logos').slick({
+   			slidesToShow: 6,
+    		slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1000,
+			arrows: true,
+			dots: false,
+			pauseOnHover: false,
+			responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4
+			}
+			}, {
+			breakpoint: 520,
+			settings: {
+				slidesToShow: 3
+			}
+			}]
+		});
+		});
+     </script>
+
+     <style>
+         /* Slider */
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.customer-logos {
+  overflow: inherit;
+  border-top: 0px solid #353535;
+  border-bottom: 0px solid #353535;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-track::before,
+.slick-track::after {
+  display: table;
+  content: '';
+}
+
+.slick-track::after {
+  clear: both;
+}
+
+.slick-track {
+  padding: 1rem 0;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: #fff;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.slick-arrow.slick-prev {
+  left: -40px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+body {
+    background-color: #000020;
+  }
+  
+.row {
+  overflow: hidden;
+}  
+
+/* JsFiddle Example only/don't use */
+.customer-logos {
+  margin-top: 32px;
+}
+
+html, body 
+{ 
+ height: 100%;
+ overflow: hidden
+}
+
+     </style>
+
+  </body>
+</html>
