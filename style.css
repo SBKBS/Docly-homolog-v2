@@ -2699,7 +2699,11 @@ border-radius: 33px;
 
 }
 
+.iframe {
+    position: relative;
+    width: 530px; 
 
+  }
 
 #frame-button{
     width: 170px; 
@@ -2711,6 +2715,17 @@ border-radius: 33px;
 
 
 
+ .iframe img{
+     width: 100%;
+ } 
+
+  
+  .iframe button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: rgb(22, 7, 108);
+  }
 
 
   
